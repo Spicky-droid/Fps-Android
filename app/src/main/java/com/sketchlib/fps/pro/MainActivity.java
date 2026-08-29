@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 		@Override
 		public void run() {
 			fpsText.setText("FPS: " + getFPS());
-			handler.postDelayed(this, 500);
+			handler.postDelayed(this, 300);
 		}
 	};
 	private MainBinding binding;
