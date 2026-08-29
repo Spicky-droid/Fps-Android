@@ -1,3 +1,4 @@
 <resources>
 	<string name="app_name" translatable="false">FPS Pro</string>
+    <string name="text" translatable="false">FPS Pro</string>
 </resources>
