@@ -1,0 +1,189 @@
+<androidx.core.widget.NestedScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fillViewport="true">
+	<LinearLayout
+		android:id="@+id/linear13"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="16dp"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/textview11"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/preview_label"
+			android:textSize="14sp"
+			android:textStyle="bold" />
+		<com.google.android.material.card.MaterialCardView
+			android:id="@+id/previewCard"
+			android:layout_width="160dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			app:cardBackgroundColor="#1A1A1A"
+			app:cardCornerRadius="12dp"
+			app:cardElevation="2dp">
+			<TextView
+				android:id="@+id/previewText"
+				android:focusable="false"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="16dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="FPS 60"
+				android:textSize="14sp"
+				android:textColor="#00E676" />
+		</com.google.android.material.card.MaterialCardView>
+		<TextView
+			android:id="@+id/labelCornerRadius"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:text="@string/label_corner_radius"
+			android:textSize="14sp" />
+		<com.google.android.material.slider.Slider
+			android:id="@+id/sliderCornerRadius"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:valueFrom="0"
+			android:valueTo="32"
+			android:stepSize="1" />
+		<TextView
+			android:id="@+id/labelTextSize"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:text="@string/label_text_size"
+			android:textSize="14sp" />
+		<com.google.android.material.slider.Slider
+			android:id="@+id/sliderTextSize"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:valueFrom="10"
+			android:valueTo="28"
+			android:stepSize="1" />
+		<TextView
+			android:id="@+id/labelOpacity"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:text="@string/label_opacity"
+			android:textSize="14sp" />
+		<com.google.android.material.slider.Slider
+			android:id="@+id/sliderOpacity"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:valueFrom="0"
+			android:valueTo="100"
+			android:stepSize="1" />
+		<TextView
+			android:id="@+id/labelWidth"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:text="@string/label_width"
+			android:textSize="14sp" />
+		<com.google.android.material.slider.Slider
+			android:id="@+id/sliderWidth"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:valueFrom="100"
+			android:valueTo="300"
+			android:stepSize="5" />
+		<TextView
+			android:id="@+id/labelHeight"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:text="@string/label_height_auto"
+			android:textSize="14sp" />
+		<com.google.android.material.slider.Slider
+			android:id="@+id/sliderHeight"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:valueFrom="0"
+			android:valueTo="400"
+			android:stepSize="10" />
+		<TextView
+			android:id="@+id/textview12"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="12dp"
+			android:text="@string/label_font_style"
+			android:textSize="14sp"
+			android:textStyle="bold" />
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/text_input_layout14"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="4dp"
+			style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+			<AutoCompleteTextView
+				android:id="@+id/dropdownFont"
+				android:focusable="false"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textSize="12sp"
+				android:inputType="none"
+				android:editable="false" />
+		</com.google.android.material.textfield.TextInputLayout>
+		<TextView
+			android:id="@+id/textview13"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:text="@string/label_text_color"
+			android:textSize="14sp"
+			android:textStyle="bold" />
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/textColorList"
+			android:layout_width="match_parent"
+			android:layout_height="56dp"
+			android:layout_marginTop="4dp" />
+		<TextView
+			android:id="@+id/textview14"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:text="@string/label_background_color"
+			android:textSize="14sp"
+			android:textStyle="bold" />
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/bgColorList"
+			android:layout_width="match_parent"
+			android:layout_height="56dp"
+			android:layout_marginTop="4dp" />
+		<TextView
+			android:id="@+id/textview15"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:text="@string/label_preset_themes"
+			android:textSize="14sp"
+			android:textStyle="bold" />
+		<com.google.android.material.chip.ChipGroup
+			android:id="@+id/presetChipGroup"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			app:singleLine="false" />
+	</LinearLayout>
+</androidx.core.widget.NestedScrollView>

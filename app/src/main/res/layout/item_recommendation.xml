@@ -1,0 +1,25 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:paddingTop="8dp"
+	android:paddingBottom="8dp"
+	android:gravity="center_vertical">
+	<View
+		android:id="@+id/view24"
+		android:layout_width="6dp"
+		android:layout_height="6dp"
+		android:background="@drawable/swatch_circle"
+		android:layout_marginEnd="10dp" />
+	<TextView
+		android:id="@+id/recommendationText"
+		android:focusable="false"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:text="Recommendation"
+		android:textSize="13sp"
+		android:layout_weight="1" />
+</LinearLayout>

@@ -1,0 +1,74 @@
+<androidx.core.widget.NestedScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fillViewport="true">
+	<LinearLayout
+		android:id="@+id/linear23"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="20dp"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/textview29"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/app_name"
+			android:textSize="22sp"
+			android:textStyle="bold" />
+		<TextView
+			android:id="@+id/versionText"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="4dp"
+			android:text="Version 1.0"
+			android:textSize="14sp"
+			android:alpha="0.7" />
+		<TextView
+			android:id="@+id/textview30"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:text="@string/about_fps_disclaimer"
+			android:textSize="14sp" />
+		<TextView
+			android:id="@+id/textview31"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:text="@string/about_cpu_disclaimer"
+			android:textSize="14sp" />
+		<TextView
+			android:id="@+id/textview32"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:text="@string/about_memory_disclaimer"
+			android:textSize="14sp" />
+		<TextView
+			android:id="@+id/textview33"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:text="@string/about_permissions"
+			android:textSize="14sp"
+			android:alpha="0.8" />
+		<TextView
+			android:id="@+id/textview34"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:text="@string/about_credits"
+			android:textSize="12sp"
+			android:alpha="0.6" />
+	</LinearLayout>
+</androidx.core.widget.NestedScrollView>

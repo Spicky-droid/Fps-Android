@@ -1,0 +1,117 @@
+<androidx.core.widget.NestedScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fillViewport="true">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="16dp"
+		android:orientation="vertical">
+		<com.google.android.material.card.MaterialCardView
+			android:id="@+id/cardview1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:cardCornerRadius="16dp"
+			app:cardElevation="2dp">
+			<LinearLayout
+				android:id="@+id/linear2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="20dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical">
+				<com.google.android.material.chip.Chip
+					android:id="@+id/statusChip"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/status_stopped"
+					android:textSize="12sp"
+					android:clickable="false"
+					android:checkable="false" />
+				<TextView
+					android:id="@+id/fpsPreviewValue"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="8dp"
+					android:text="0"
+					android:textSize="48sp"
+					android:textStyle="bold" />
+				<TextView
+					android:id="@+id/textview1"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/dashboard_fps_preview_label"
+					android:textSize="12sp"
+					android:alpha="0.7" />
+				<com.google.android.material.button.MaterialButton
+					android:id="@+id/btnToggleOverlay"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="16dp"
+					android:text="@string/start_overlay"
+					android:textSize="12sp" />
+			</LinearLayout>
+		</com.google.android.material.card.MaterialCardView>
+		<TextView
+			android:id="@+id/textview2"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:text="@string/dashboard_system_info"
+			android:textSize="16sp"
+			android:textStyle="bold" />
+		<com.google.android.material.card.MaterialCardView
+			android:id="@+id/cardview2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			app:cardCornerRadius="16dp"
+			app:cardElevation="1dp">
+			<LinearLayout
+				android:id="@+id/linear3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="16dp"
+				android:orientation="vertical">
+				<include
+					android:id="@+id/rowRam"
+					layout="@layout/row_stat_item" />
+				<include
+					android:id="@+id/rowCpu"
+					layout="@layout/row_stat_item" />
+				<include
+					android:id="@+id/rowBattery"
+					layout="@layout/row_stat_item" />
+				<include
+					android:id="@+id/rowTemp"
+					layout="@layout/row_stat_item" />
+				<include
+					android:id="@+id/rowNetwork"
+					layout="@layout/row_stat_item" />
+				<include
+					android:id="@+id/rowRefreshRate"
+					layout="@layout/row_stat_item" />
+				<include
+					android:id="@+id/rowResolution"
+					layout="@layout/row_stat_item" />
+			</LinearLayout>
+		</com.google.android.material.card.MaterialCardView>
+		<TextView
+			android:id="@+id/textview3"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:text="@string/dashboard_disclaimer"
+			android:textSize="12sp"
+			android:alpha="0.6" />
+	</LinearLayout>
+</androidx.core.widget.NestedScrollView>

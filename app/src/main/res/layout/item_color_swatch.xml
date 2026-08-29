@@ -1,0 +1,11 @@
+<View
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/swatchView"
+	android:layout_width="40dp"
+	android:layout_height="40dp"
+	android:layout_margin="6dp"
+	android:background="@drawable/swatch_circle"
+	android:clickable="true"
+	android:focusable="true" />
